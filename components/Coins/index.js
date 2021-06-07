@@ -7,6 +7,9 @@ const Coins = ({ name, price, symbol, marketcap, volume, image, priceChange, id 
             <h1 className='coin_h1'>{name}</h1>
             <p className='coin_symbol'>{symbol}</p>
         </div>
+        <div className='coin_data'>
+          <p className='coin_price'>${price}</p>
+        </div>
       </div>
     </div>
   )
