@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Coins from '../components/Coins'
-import SearchBar from '../components/SearchBar'
+import CoinList from '../components/CoinList';
+// import Coins from '../components/Coins'
+// import SearchBar from '../components/SearchBar'
 
-export default function Home() {
+export default function Home({filteredCoins}) {
+  console.log(filteredCoins);
   return (
     <div>
       <Head>
@@ -12,8 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-    <SearchBar type='text' placeholder='Search' />
-    <Coins />
+    {/* <SearchBar type='text' placeholder='Search' /> */}
+    <CoinList filteredCoins={filteredCoins} />
     </div>
   );
 }
