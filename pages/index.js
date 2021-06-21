@@ -8,7 +8,7 @@ export default function Home({filteredCoins}) {
   return (
     <Layout>
       <Head>
-        <title>Title</title>
+        <title>Crypto Tracker</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
